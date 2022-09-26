@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="362.554" Width="662.812">
+    <Grid Margin="0,0,-6.2,-0.2" Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="280*"/>
+            <RowDefinition Height="53*"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBox x:Name="FileNameData" HorizontalAlignment="Left" Height="31" Margin="24,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="396"></TextBox>
+        <Button x:Name="button" Click="GetFilePath" Content="Browse The CSV File Location" HorizontalAlignment="Left" Height="26" Margin="454,96,0,0" VerticalAlignment="Top" Width="167" RenderTransformOrigin="0.61,0.308"/>
+        <Button x:Name="button8" Content="Create TimeTable By Mission_TDG" HorizontalAlignment="Left" Height="38" Margin="240,182,0,0" VerticalAlignment="Top" Click="CreateTimetable" Width="210"/>
+        <Label x:Name="label"  FontSize="14" FontFamily="Calibri" FontWeight="Bold" HorizontalAlignment="Left" Height="46" Margin="240,23,0,0" VerticalAlignment="Top" Width="320">
+            <TextBlock TextDecorations="Underline">Mock UI To Create TimeTable</TextBlock>
+
+        </Label>
+
+    </Grid>
+</Window>
